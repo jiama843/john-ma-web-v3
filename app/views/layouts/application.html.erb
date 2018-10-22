@@ -9,7 +9,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body class="app-background" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>">
     <%= render "shared/navbar" %>
     <%= yield %>
   </body>

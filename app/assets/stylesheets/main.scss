@@ -1,3 +1,24 @@
 // Place all the styles related to the main controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.jumbotron {
+    background-color: white;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding: 5em inherit;
+}
+
+.oneshot_icon{
+    height: 300px;
+    width: 300px;
+    background-image: url('oneshot_lightbulb.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+
+//.display-4{
+//    z-index: 1;
+//}
