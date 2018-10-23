@@ -2,7 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.jumbotron {
+/*.jumbotron {
+    background-color: white;
+    background-size: cover;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding: 5em inherit;
+}*/
+
+.container {
     background-color: white;
     background-size: cover;
     padding-top: 10%;
@@ -17,6 +25,46 @@
     background-repeat: no-repeat; 
     background-size: cover;
     background-position: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: transparent;
+}
+
+#about_me{
+    padding-top: 10%;
+    padding-bottom: 10%;
+    padding: 5em inherit;
+}
+
+.factorplus {
+    background-color: lightgrey;
+    background-blend-mode: screen;
+    background-image: url('factorplus.png'); 
+}
+
+.pyremote {
+    background-color: lightgrey;
+    background-blend-mode: screen;
+    background-image: url('pyremote.png'); 
+}
+
+.thbot {
+    background-color: lightgrey;
+    background-blend-mode: screen;
+    background-image: url('touhou11.jpg'); 
 }
 
 //.display-4{
