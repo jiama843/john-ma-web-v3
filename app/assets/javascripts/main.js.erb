@@ -31,29 +31,31 @@ $(document).on("turbolinks:load", function(){
     $( ".oneshot_icon" ).on("click", function() {
       if ( state ) {
 
-        $('.oneshot_icon').fadeOut(500, function() {
+        $('.oneshot_icon').fadeOut(0, function() {
           $('.oneshot_icon').css('background-image', 'url(<%= asset_path('oneshot_lightbulb_on.png')%>)');
           $('.oneshot_icon').fadeIn(500);
         });
 
+        $("html").css('background-color', 'black');
         $(".navbar").css('background-image', 'url(<%= asset_path('oneshot_navbar.png')%>)').hide().fadeIn(1500);
-        $(".navbar").css('color', 'yellow').hide().fadeIn(1500);
+        $(".navbar").css('color', 'yellow').fadeIn(1500);
 
         $("#app").css('background-image', 'url(<%= asset_path('dark_bg.png')%>)').hide().fadeIn(1500);
-        $("#app").css('color', 'yellow').hide().fadeIn(1500);
+        $("#app").css('color', 'yellow').fadeIn(1500);
 
       } else {
 
-        $('.oneshot_icon').fadeOut(500, function() {
+        $('.oneshot_icon').fadeOut(0, function() {
           $('.oneshot_icon').css('background-image', 'url(<%= asset_path('oneshot_lightbulb_off.png')%>)');
           $('.oneshot_icon').fadeIn(500);
         });
 
+        $("html").css('background-color', 'white');
         $(".navbar").css('background-image', 'none').hide().fadeIn(1500);
-        $(".navbar").css('color', 'black').hide().fadeIn(1500);
+        $(".navbar").css('color', 'black').fadeIn(1500);
 
         $("#app").css('background-image', 'none').hide().fadeIn(1500);
-        $("#app").css('color', 'black').hide().fadeIn(1500);
+        $("#app").css('color', 'black').fadeIn(1500);
         
       }
       state = !state;
