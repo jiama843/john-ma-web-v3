@@ -42,6 +42,9 @@ gem 'bootstrap', '~> 4.0'
 # Include jquery
 gem 'jquery-rails'
 
+# include jquery colour
+gem 'jquery-color', '~> 2.1', '>= 2.1.2'
+
 # Allow use of sass
 gem 'sass', '~> 3.4', '>= 3.4.22'
 

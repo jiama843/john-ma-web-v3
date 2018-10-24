@@ -10,7 +10,9 @@
   </head>
 
   <body class="app-background" data-controller="<%= params[:controller] %>" data-action="<%= params[:action] %>">
-    <%= render "shared/navbar" %>
-    <%= yield %>
+    <div id="app">
+      <%= render "shared/navbar" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
