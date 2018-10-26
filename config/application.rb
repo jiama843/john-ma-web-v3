@@ -2,6 +2,7 @@ require_relative 'boot'
 
 #require 'rails/all'
 
+require 'kramdown'
 require 'action_controller/railtie'
 require 'action_mailer/railtie'
 require 'active_model/railtie'
