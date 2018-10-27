@@ -8,8 +8,7 @@ class MainController < ApplicationController
   end
   
   def blog_page
-    file = File.read('app/views/blog/blog_entries/'+params[:format]+'.md')
-    @doc = Kramdown::Document.new(file)
+    @file = File.read('app/views/blog/blog_entries/'+params[:format]+'.md')
     render 'blog/blog_entry', format: :html
   end
 
