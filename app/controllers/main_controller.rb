@@ -13,10 +13,10 @@ class MainController < ApplicationController
   end
 
   def resume
-
+    render 'resume/resume', format: :html
   end
 
   def contact
-
+    render 'contact/contact', format: :html
   end
 end

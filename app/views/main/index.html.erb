@@ -18,6 +18,9 @@
         <p class="display-5">
             I'm a 3A CS student at the University of Waterloo who loves indie games and good music.<br>
         </p>
+        <p>
+            <%= link_to "Resume", asset_path("Resume3A.pdf") %>
+        </p>
     </div>
     <div id="projects" class="container text-center">
         <h1 class="display-4">Some Projects</h1>
@@ -44,7 +47,9 @@
             <script type="IN/MemberProfile" data-id="http://www.linkedin.com/in/john-ma-4b9896132" data-format="inline" data-related="false"></script>
         </div> -->
         <div>
-            <div class="github-card" data-github="jiama843" data-width="400" data-height="" data-theme="default"></div>
+            <% # <%= render "components/github-card"
+            %> 
+            <div class="github-card" data-github="jiama843" data-width="400" data-height="150" data-theme="default"></div>
             <script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
         </div>
     </div>
