@@ -37,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 # Install bootstrap gem
-gem 'bootstrap', '~> 4.0'
+gem 'bootstrap', '~> 4.3'
 
 # Include jquery
 gem 'jquery-rails'
